@@ -4018,7 +4018,7 @@ var BW_PATCH = {
     },
     Cryogonal: {
         types: ['Ice'],
-        bs: { hp: 80, at: 50, df: 5d0, sa: 95, sd: 135, sp: 105 },
+        bs: { hp: 80, at: 50, df: 50, sa: 95, sd: 135, sp: 105 },
         weightkg: 148,
         abilities: { 0: 'Levitate' },
         gender: 'N'
