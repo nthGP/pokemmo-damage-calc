@@ -1,0 +1,64 @@
+- snow added to gen 5 mechanics
+- added Snowscape as a move
+- outrage 90 bp
+
+
+base stat updates
+
+    Butterfree's base Special Attack was increased from 80 to 90.
+    Beedrill's base Attack was increased from 80 to 90.
+    Pidgeot's base Speed was increased from 91 to 101.
+    Pikachu's base Defence and Special Defence was increased from 30 to 40 and 40 to 50 respectively.
+    Raichu's base Speed was increased from 100 to 110.
+    Nidoqueen's base Attack was increased from 82 to 92.
+    Nidoking's base Attack was increased from 92 to 102.
+    Clefable's base Special Attack was increased from 85 to 95.
+    Wigglytuff's base Special Attack was increased from 75 to 85.
+    Vileplume's base Special Attack was increased from 100 to 110.
+    Poliwrath's base Attack was increased from 85 to 95.
+    Alakazam's base Special Defence was increased from 85 to 95.
+    Victreebel's base Special Defence was increased from 60 to 70.
+    Golem's base Attack was increased from 110 to 120.
+    Ampharos' base Defence was increased from 75 to 85.
+    Bellossom's base Defence was increased from 85 to 95.
+    Azumarill's base Special Attack was increased from 50 to 60.
+    Jumpluff's base Special Defence was increased from 85 to 95.
+    Beautifly's base Special Attack was increased from 90 to 100.
+    Exploud's base Special Defence was increased from 63 to 73.
+    Staraptor's base Special Defence was increased from 50 to 60.
+    Roserade's base Defence was increased from 55 to 65.
+    Stoutland's base Attack was increased from 100 to 110.
+    Unfezant's base Attack was increased from 105 to 115.
+    Gigalith's base Special Defence was increased from 70 to 80.
+    Seismitoad's base Attack was increased from 85 to 95.
+    Leavanny's base Special Defence was increased from 70 to 80.
+    Scolipede's base Attack was increased from 90 to 100.
+    Krookodile's base Defence was increased from 70 to 80.
+
+    Arbok's base Attack was increased from 85 to 95.
+    [x]Dugtrio's base Attack was increased from 80 to 100.
+    Farfetch'd's base Attack was increased from 65 to 90.
+    Dodrio's base Speed was increased from 100 to 110.
+    Electrode's base Speed was increased from 140 to 150.
+    Exeggutor's base Special Defence was increased from 65 to 75.
+    Noctowl's base Special Attack was increased from 76 to 86.
+    Ariados's base Special Defence was increased from 60 to 70.
+    Qwilfish's base Defence was increased from 75 to 85.
+    Magcargo's base HP and Special Attack was increased from 50 to 60 and 80 to 90 respectively.
+    Corsola's base HP, Defence and Special Defence was increased from 55 to 65, 85 to 95 and 85 to 95 respectively.
+    Mantine's base HP was increased from 65 to 85.
+    Swellow's base Special Attack was increased from 50 to 75.
+    Pelipper's base Special Attack was increased from 85 to 95.
+    Masquerain's base Special Attack and Speed was increased from 80 to 100 and 60 to 80 respectively.
+    Delcatty's base Speed was increased from 70 to 90.
+    Volbeat's base Defence and Special Defence was increased from 55 to 75 and 75 to 85 respectively.
+    Lunatone's base HP was increased from 70 to 90.
+    Solrock's base HP was increased from 70 to 90.
+    Chimecho's base HP, Defence and Special Defence was increased from 65 to 75, 70 to 80 and 80 to 90 respectively.
+    Woobat's base HP was increased from 55 to 65.
+    Crustle's base Attack was increased from 95 to 105.
+    Beartic's base Attack was increased from 110 to 130.
+    Cryogonal's base HP and Defence was increased from 70 to 80 and 30 to 50 respectively.
+    [x]Mega Alakazam's base Special Defence was increased from 95 to 105.
+
+https://pokemondb.net/pokebase/267683/pokemon-increased-decreased-previous-generation-generation
