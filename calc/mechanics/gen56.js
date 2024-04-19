@@ -43,6 +43,23 @@ function calculateBWXY(gen, attacker, defender, move, field) {
         defender.ability = '';
         desc.attackerAbility = attacker.ability;
     }
+    //ripped from 789 to add neutralizing gas
+    var ignoresNeutralizingGas = [
+        'As One (Glastrier)', 'As One (Spectrier)', 'Battle Bond', 'Comatose',
+        'Disguise', 'Gulp Missile', 'Ice Face', 'Multitype', 'Neutralizing Gas',
+        'Power Construct', 'RKS System', 'Schooling', 'Shields Down',
+        'Stance Change', 'Tera Shift', 'Zen Mode', 'Zero to Hero',
+    ];
+    if (attacker.hasAbility('Neutralizing Gas') &&
+        !ignoresNeutralizingGas.includes(defender.ability || '')) {
+        desc.attackerAbility = attacker.ability;
+        defender.ability = '';
+    }
+    if (defender.hasAbility('Neutralizing Gas') &&
+        !ignoresNeutralizingGas.includes(attacker.ability || '')) {
+        desc.defenderAbility = defender.ability;
+        attacker.ability = '';
+    }
     var isCritical = move.isCrit && !defender.hasAbility('Battle Armor', 'Shell Armor') && move.timesUsed === 1;
     if (move.named('Weather Ball')) {
         move.type =
@@ -429,6 +446,9 @@ function calculateBPModsBWXY(gen, attacker, defender, move, field, desc, basePow
             attacker.hasStatus('psn', 'tox') && move.category === 'Physical')) {
         bpMods.push(6144);
         desc.attackerAbility = attacker.ability;
+    }
+    else if (attacker.hasAbility("Sharpness") && move.flags.slicing) {
+        bpMods.push(5734);
     }
     else if (attacker.hasAbility('Analytic') && turnOrder !== 'first') {
         bpMods.push(5325);
