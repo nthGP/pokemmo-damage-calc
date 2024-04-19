@@ -764,7 +764,8 @@ function calculateBaseDamageBWXY(gen, attacker, basePower, attack, defense, move
         desc.weather = field.weather;
     }
     if (isCritical) {
-        baseDamage = Math.floor((0, util_2.OF32)(baseDamage * (gen.num > 5 ? 1.5 : 2)));
+        //changed to gen.num > 4 instead of 5 to make crit dmg in line with the game
+        baseDamage = Math.floor((0, util_2.OF32)(baseDamage * (gen.num > 4 ? 1.5 : 2)));
         desc.isCritical = isCritical;
     }
     return baseDamage;

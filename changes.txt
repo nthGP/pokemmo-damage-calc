@@ -1,6 +1,5 @@
 - snow added to gen 5 mechanics
 - added Snowscape as a move
-- outrage 90 bp
 
 
 base stat updates
@@ -178,3 +177,9 @@ var MMO_PATCH = {
 };
 var BW = (0, util_1.extend)(true, {}, DPP, BW_PATCH, MMO_PATCH);
 delete BW["Faint Attack"];
+
+
+
+add sharpness + neutralizing gas to abilities.js
+
+crit dmg fix (to 1.5)
