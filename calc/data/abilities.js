@@ -216,7 +216,8 @@ var BW = DPP.concat([
     'Wonder Skin',
     'Zen Mode',
     'Neutralizing Gas',
-    'Sharpness'
+    'Sharpness',
+    'Competitive'
 ]);
 var XY = BW.concat([
     'Aerilate',
