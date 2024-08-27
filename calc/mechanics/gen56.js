@@ -448,7 +448,7 @@ function calculateBPModsBWXY(gen, attacker, defender, move, field, desc, basePow
         desc.attackerAbility = attacker.ability;
     }
     else if (attacker.hasAbility("Sharpness") && move.flags.slicing) {
-        bpMods.push(5734);
+        bpMods.push(6144);
     }
     else if (attacker.hasAbility('Analytic') && turnOrder !== 'first') {
         bpMods.push(5325);
