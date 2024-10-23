@@ -317,6 +317,7 @@ var DPP = ADV.concat([
 var BW = DPP.concat([
     'Absorb Bulb',
     'Air Balloon',
+    'Assault Vest',
     'Big Nugget',
     'Binding Band',
     'Bug Gem',
