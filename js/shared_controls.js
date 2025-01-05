@@ -489,6 +489,7 @@ $(".move-selector").change(function () {
 	var moveGroupObj = $(this).parent();
 	moveGroupObj.children(".move-bp").val(moveName === 'Present' ? 40 : move.bp);
 	var m = moveName.match(HIDDEN_POWER_REGEX);
+	/* removing hidden power iv changes 
 	if (m) {
 		var pokeObj = $(this).closest(".poke-info");
 		var pokemon = createPokemon(pokeObj);
@@ -526,7 +527,7 @@ $(".move-selector").change(function () {
 			pokeObj.find("." + legacyStat + " .ivs").val(31);
 			pokeObj.find("." + legacyStat + " .dvs").val(15);
 		}
-	}
+	}*/
 	$(this).attr('data-prev', moveName);
 	moveGroupObj.children(".move-type").val(move.type);
 	moveGroupObj.children(".move-cat").val(move.category);
