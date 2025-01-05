@@ -706,7 +706,18 @@ $(".set-selector").change(function () {
 			pokeObj.find(".teraType").val(getForcedTeraType(pokemonName) || pokemon.types[0]);
 			pokeObj.find(".level").val(defaultLevel);
 
+			pokeObj.find(".level").val(defaultLevel);
+			pokeObj.find(".hp .evs").val(0);
+			pokeObj.find(".hp .ivs").val(31);
+			pokeObj.find(".hp .dvs").val(15);
+			for (i = 0; i < LEGACY_STATS[gen].length; i++) {
+				pokeObj.find("." + LEGACY_STATS[gen][i] + " .evs").val(0);
+				pokeObj.find("." + LEGACY_STATS[gen][i] + " .ivs").val(31);
+				pokeObj.find("." + LEGACY_STATS[gen][i] + " .dvs").val(15);
+			}
+
       // auto set to gym rerun ivs/evs if gym option is selected
+			/* fix later
 			if(!($("input:radio[name='defaultLevel']:checked").attr('id'))){
 				pokeObj.find(".hp .evs").val(0);
 				pokeObj.find(".hp .ivs").val(31);
@@ -725,7 +736,7 @@ $(".set-selector").change(function () {
 					pokeObj.find("." + LEGACY_STATS[gen][i] + " .ivs").val(25);
 					pokeObj.find("." + LEGACY_STATS[gen][i] + " .dvs").val(15);
 				}
-			}
+			} */
 			pokeObj.find(".nature").val("Hardy");
 			setSelectValueIfValid(abilityObj, pokemon.abilities[0], "");
 			if (startsWith(pokemonName, "Ogerpon-") && !startsWith(pokemonName, "Ogerpon-Teal")) {
