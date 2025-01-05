@@ -107,6 +107,15 @@ $("input:radio[name='format']").change(function () {
 var defaultLevel = 100;
 $("input:radio[name='defaultLevel']").change(function () {
 	defaultLevel = $("input:radio[name='defaultLevel']:checked").val();
+	$("#levelL1").val(defaultLevel);
+	$("#levelR1").val(defaultLevel);
+	$("#levelL1").trigger("change");
+	$("#levelR1").trigger("change");
+});
+/*
+var defaultLevel = 100;
+$("input:radio[name='defaultLevel']").change(function () {
+	defaultLevel = $("input:radio[name='defaultLevel']:checked").val();
 	if(defaultLevel!=85){
 		$("#levelL1").val(defaultLevel);
 		$("#levelR1").val(defaultLevel);
@@ -129,7 +138,7 @@ $("input:radio[name='defaultLevel']").change(function () {
 			$(".sp .evs")[1].value = 85;
 	}
 
-});
+}); */
 
 // auto-calc stats and current HP on change
 $(".level").bind("keyup change", function () {
