@@ -215,7 +215,7 @@ var RBY = {
     },
     Dugtrio: {
         types: ['Ground'],
-        bs: { hp: 35, at: 80, df: 50, sp: 120, sl: 70 },
+        bs: { hp: 35, at: 100, df: 50, sp: 120, sl: 70 },
         weightkg: 33.3
     },
     Eevee: {
