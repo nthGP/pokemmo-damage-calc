@@ -221,10 +221,11 @@ function calculateBWXY(gen, attacker, defender, move, field) {
     var defense = calculateDefenseBWXY(gen, attacker, defender, move, field, desc, isCritical);
     var baseDamage = calculateBaseDamageBWXY(gen, attacker, basePower, attack, defense, move, field, desc, isCritical);
     var stabMod = (0, util_2.getStabMod)(attacker, move, desc);
+    // change for facade to ignore burn in gen 5
     var applyBurn = attacker.hasStatus('brn') &&
         move.category === 'Physical' &&
         !attacker.hasAbility('Guts') &&
-        !(move.named('Facade') && gen.num === 6);
+        !(move.named('Facade') && (gen.num === 5 || gen.num === 6));
     desc.isBurned = applyBurn;
     var finalMods = calculateFinalModsBWXY(gen, attacker, defender, move, field, desc, isCritical, typeEffectiveness);
     var finalMod = (0, util_2.chainMods)(finalMods, 41, 131072);

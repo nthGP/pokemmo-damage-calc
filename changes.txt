@@ -1,5 +1,6 @@
 - snow added to gen 5 mechanics
 - added Snowscape as a move
+- updated the burn penalty to not affect facade
 
 
 base stat updates
