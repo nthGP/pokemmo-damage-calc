@@ -600,12 +600,6 @@ var RBY = {
         weightkg: 6,
         nfe: true
     },
-    "Pikachu (Red's)": {
-        types: ['Electric'],
-        bs: { hp: 45, at: 80, df: 50, sp: 75, sl: 120 },
-        weightkg: 6,
-        nfe: true
-    },
     Pinsir: { types: ['Bug'], bs: { hp: 65, at: 125, df: 100, sp: 85, sl: 55 }, weightkg: 55 },
     Poliwag: {
         types: ['Water'],
@@ -952,7 +946,6 @@ var GSC_PATCH = {
     Pidgeotto: { bs: { sa: 50, sd: 50 } },
     Pidgey: { bs: { sa: 35, sd: 35 } },
     Pikachu: { bs: { sa: 50, sd: 50 } },
-    "Pikachu (Red's)":{ bs: { sa: 75, sd: 60 } },
     Pinsir: { bs: { sa: 55, sd: 70 } },
     Poliwag: { bs: { sa: 40, sd: 40 } },
     Poliwhirl: { bs: { sa: 50, sd: 50 } },
@@ -4640,6 +4633,12 @@ var BW_PATCH = {
         weightkg: 55.5,
         nfe: true,
         abilities: { 0: 'Blaze' }
+    },
+    'Red\'s Pikachu': {
+        types: ['Electric'],
+        bs: { hp: 45, at: 80, df: 50, sa: 75, sd: 60, sp: 120 },
+        weightkg: 6,
+        nfe: true,
     },
     Purrloin: {
         types: ['Dark'],
