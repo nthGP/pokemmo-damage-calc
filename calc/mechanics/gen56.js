@@ -467,6 +467,9 @@ function calculateBPModsBWXY(gen, attacker, defender, move, field, desc, basePow
         bpMods.push(4915);
         desc.attackerAbility = attacker.ability;
     }
+    if (attacker.hasItem('Punching Glove') && move.flags.punch) {
+        bpMods.push(4506);
+    }
     if (defender.hasAbility('Heatproof') && move.hasType('Fire')) {
         bpMods.push(2048);
         desc.defenderAbility = defender.ability;

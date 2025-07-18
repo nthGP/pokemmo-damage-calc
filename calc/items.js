@@ -180,6 +180,7 @@ var FLING_80 = new Set([
     'Blunder Policy',
     'Chipped Pot',
     'Cracked Pot',
+    'Reinforced Boots',
     'Heavy-Duty Boots',
     'Weakness Policy',
     'Quick Claw',
