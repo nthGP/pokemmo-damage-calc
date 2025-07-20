@@ -32,6 +32,11 @@ function calculateBWXY(gen, attacker, defender, move, field) {
         isWonderRoom: field.isWonderRoom
     };
     var result = new result_1.Result(gen, attacker, defender, move, field, 0, desc);
+    // Remove Reflect/Light Screen if Brick Break is used (Gen 5/6)
+    if ((gen.num === 5 || gen.num === 6) && move.named('Brick Break')) {
+        field.defenderSide.isReflect = false;
+        field.defenderSide.isLightScreen = false;
+    }
     if (move.category === 'Status' && !move.named('Nature Power')) {
         return result;
     }
