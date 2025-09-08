@@ -976,6 +976,12 @@ function correctHiddenPower(pokemon) {
 	for (var i = 0; i < pokemon.moves.length; i++) {
 		var m = pokemon.moves[i].match(HIDDEN_POWER_REGEX);
 		if (!m) continue;
+
+		// PATCH: if the move name already specifies the type, skip any IV/type correction
+		if (m[1]) {
+			continue;
+		}
+
 		// The Pokemon has Hidden Power and is not maxed but the types don't match we don't
 		// want to attempt to reconcile the user's IVs so instead just correct the HP type
 		if (!maxed && expected.type !== m[1]) {
